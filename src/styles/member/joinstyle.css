@@ -1,0 +1,271 @@
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;   
+}
+
+.title_text {
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+    border-bottom: 2px solid #00000011 ;
+    
+}
+
+.contaner-box{
+    
+    width: 100%;
+    max-width: 600px;
+    /* height: 800px; */
+    margin: 50px auto 0 auto ;
+    /* border: 0.20px solid #dedede; */
+    border-radius: 5%;
+    box-shadow: 0px 5px 20px 5px rgb(233, 233, 233);
+}
+
+.input-write {
+    width: 60%;
+    margin: auto;
+}
+
+.input-write input{
+    width: 100%;
+    padding-top: 10px;
+    font-size: 17px;
+    border: 2px solid #acacac ;
+    border-radius: 5px;
+}
+
+.input-write label {
+    padding-top: 40px;
+    display: block;
+    text-align: left
+    
+}
+
+.id-same {
+    box-sizing: border-box;
+    padding: 5px;
+    border: none;
+    color: white;
+    background-color: blue;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.date_item{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    .warning{
+      color:red;
+      font-size:8px;
+      visibility:hidden;
+      &.on{
+        visibility:visible;
+      }
+    }
+  }
+
+
+  .jon-btn {
+    margin: 10px 0 30px 0;
+    padding: 10px;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+
+  }
+  .passP , .passC {
+    padding-top: 5px;
+    font-size: 10px;
+    color: red;
+    /* visibility: hidden; */
+    display: none;
+  }
+.error-message{
+    padding-top: 5px;
+    font-size: 10px;
+    color: red;
+}
+
+.consent {
+    margin-top: 70px;
+	font-family: 'g-1';
+
+}
+
+.step li{
+    display: inline-block;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap');
+
+
+.tabs {
+  position:absolute;
+  left:50%;
+  transform:translate(-50%);
+  margin-top: 20px;
+  width:100%;
+  max-width: 400px;
+  /* background:#f5f5f5; */
+  padding:20px 30px;
+  overflow:hidden;
+  /* border-radius:50px;
+  box-shadow:5px 10px 5px #ccc; */
+}
+.tabs .tab-header {
+  height:30px;
+  display:flex;
+  align-items:center;
+}
+.tabs .tab-header >  div {
+  width:calc(100% / 3);
+  text-align:center;
+  color:#888;
+  font-weight:600;
+  cursor:pointer;
+  font-size:14px;
+  text-transform:uppercase;
+  outline:none;
+}
+.tabs .tab-header > div > i {
+  display:block;
+  margin-bottom:5px;
+}
+.tabs .tab-header > div.active {
+  color:#00acee;
+}
+.tabs .tab-indicator {
+  position:relative;
+  width:calc(100% / 3);
+  height:5px;
+  background:#00acee;
+  left:0px;
+  border-radius:5px;
+  transition:all 500ms ease-in-out;
+}
+.tabs .tab-body {
+  position:relative;
+  height:calc(100% - 60px);
+  padding:10px 5px;
+}
+.tabs .tab-body > div {
+  position:absolute;
+  top:-200%;
+  opacity:0;
+  transform:scale(0.9);
+  transition:opacity 500ms ease-in-out 0ms,
+    transform 500ms ease-in-out 0ms;
+}
+.tabs .tab-body > div.active {
+  top:0px;
+  opacity:1;
+  transform:scale(1);
+}
+
+.memberConsent{
+    margin: 150px auto;
+    max-width: 710px;
+}
+
+
+/* ////////////////// 약 관 동 의 ///////////////////// */
+
+.areeAll h4{
+    border-bottom: 2px solid#000000;
+    padding-bottom: 5px;
+}
+.areeAll{
+    border-bottom: 1px solid #bababa;
+    padding-bottom: 15px;
+}
+.areeAllText {
+    font-family: 'g-2' ;
+    font-size: 18px;
+}
+
+.ec-chk{
+    box-sizing: border-box;  
+}
+
+.agreeInner{
+    width: 100%;
+    padding-top: 5px;
+}
+
+.chkStep1  {
+    display: flex;
+}
+
+.chkStep1 label{
+    margin-top: 5px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    overflow-y: scroll; /* 스크롤바가 항상 보이도록 설정 */
+    scrollbar-width: thin; /* 스크롤바 너비를 줄임 (Firefox) */
+    scrollbar-color: #888 #f0f0f0; /* 스크롤바 색상 조정 (Firefox) */
+    resize: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:390px) {
+
+    input[type="checkbox"] {
+        width: 15px;
+        height: 15px;   
+        }textarea{
+            height: 100px;
+            font-size: 11px;
+    }
+
+    .input-write label {
+        padding-top: 10px;
+    }
+    .contaner-box{
+        width: 90%;
+    }
+    .tabs {
+        max-width: 300px;
+        font-size: 10px;
+        margin: 0;
+        }.tabs .tab-header > div{
+            font-size: 12px;
+    }
+    .consent{
+        margin-top: 30px;
+        }.consent > h2 {
+            font-size: 15px;
+            color: #242424;
+    }
+    
+
+    .memberConsent{
+        margin-top: 100px;
+        max-width: 350px;
+        }.areeAllText{
+            font-size: 15px;
+        }.chkStep1 label , .areeAll h4{
+            font-size: 13px;
+        }
+}
+
+
+

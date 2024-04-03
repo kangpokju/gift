@@ -1,0 +1,39 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+ 
+  .desk__slide{
+    display: block;
+  }
+  .M__slide {
+    display: none;
+  }
+
+@media screen and (max-width: 390px) {
+  .desk__slide {
+    display: none;
+  }
+
+  .M__slide {
+    display: block; /* 또는 flex, grid 등 프로젝트 요구에 맞게 조정 */
+  }
+}

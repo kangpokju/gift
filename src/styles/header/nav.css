@@ -1,0 +1,82 @@
+
+.nav{
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+	/* background-color: aquamarine; */
+}
+
+.nav_top{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav_top a img , .menu_nav-category a img {
+	width: 120px;
+}
+
+.menu_nav-category {
+	margin: auto;
+}
+
+.nav_top div a {
+	padding: 5px;
+	color: rgb(123, 123, 123);
+}
+.menu_nav{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 0.1fr 100fr 1fr;
+	box-sizing: border-box;
+}
+
+.M__menu_nav{
+	display: flex;
+	display: none;
+}
+.menu_nav-icon{
+	display: flex;
+}
+.menu_nav-icon a img{
+	width: 25px;
+	margin-left: 10px;
+}
+.menu_nav div a{
+	color: rgb(49, 49, 49);
+	margin-left: 15px;
+}
+.mobile__header{
+	display: none;
+}
+
+@media screen and (max-width: 390px ) {
+
+	.desk__header{
+		display: none;
+	}
+	.mobile__header{
+		display: block;
+		}.nav{
+		padding: 2px;
+		display: flex;
+		justify-content: space-between;
+	}
+	.M__logo{
+		margin-left: 70px;
+		width: 100px;
+		height: 30px;
+	}.M__basket{
+		width: 30px;
+		height: 30px;
+	}.M__menu{
+		width: 30px;
+	}
+	.member_join a{
+		font-size: 12px;
+		vertical-align: bottom;
+		margin-left: 5px;
+	}
+}
+
+
+

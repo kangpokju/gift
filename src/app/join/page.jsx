@@ -8,7 +8,7 @@ export default function Compl() {
 
     useEffect(() => {
      
-			fetch(`${NEXT_PUBLIC_API_URL}/api/completion`)
+			fetch('api/completion')
 				.then((response) => response.json())
 				.then((fetchdata) => {
 					setFormData(fetchdata)

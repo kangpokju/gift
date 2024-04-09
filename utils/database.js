@@ -1,4 +1,3 @@
-// mysql 모듈에서 createPool을 가져옵니다. createPool은 데이터베이스 연결 풀을 생성하는 함수입니다.
 const { createPool } = require("mysql");
 
 const pool = createPool({
